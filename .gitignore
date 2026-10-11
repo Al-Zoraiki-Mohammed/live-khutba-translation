@@ -1,3 +1,7 @@
+# environment variables
+.env
+*.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -218,3 +222,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OpenAI Keys / Secrets
+.env
+*.env
+
+# Python & Environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS files
+.DS_Store
+
+# IDE / Editors
+.vscode/
+.idea/
+
