@@ -1,15 +1,19 @@
 # Live Khutba AI Translation System
 
-A real-time, AI-powered transcription and translation system designed for Friday Khutbas in mosques. It listens to the live audio feed, detects natural speech pauses using Voice Activity Detection (VAD), transcribes Arabic speech accurately using OpenAI Whisper, translates it into professional English using GPT-4o-mini (maintaining strict rules for Quranic verses and Hadith references), and streams it instantly to a sleek, large-format web interface meant for mosque display screens alongside prayer timetable software (like Mawaqit).
+A real-time, AI-powered transcription and translation system designed for Friday Khutbas in mosques. It listens to the live audio feed, detects natural speech pauses using Voice Activity Detection (VAD), transcribes Arabic speech accurately using OpenAI Whisper, translates it into professional English using GPT-4o-mini (maintaining strict rules for Quranic verses and Hadith references), and streams it instantly to a sleek, large-format web interface.
 
 ---
 
 ## 🎯 The Problem & Solution
 
-* **The Problem:** Non-Arabic speaking congregants, youth, and new Muslims often struggle to follow the Friday Khutba, missing out on crucial reminders, Quranic explanations, and Islamic teachings.
-* **The Solution:** This application hooks into the mosque's audio system, processes the live speech locally via Python, and renders a live, cinema-quality typing transcription feed on a browser screen with zero manual intervention required by mosque volunteers.
-
+* **The Problem:** 
+  * Non-Arabic speaking congregants, youth, and new Muslims often struggle to follow the Friday Khutba, missing out on crucial reminders and Islamic teachings.
+  * When mosques hire human translators or ask the Imam to translate sentence-by-sentence during the Khutba, it significantly delays the speech and makes the overall Khutba time much longer, disrupting tight Friday schedules.
+* **The Solution:** 
+  * This application hooks directly into the mosque's audio feed and streams real-time AI translations instantly without forcing the Imam to pause.
+  * Congregants follow along live on display screens (such as next to Mawaqit prayer timetables) with zero human
 ---
+
 
 ## 📂 Project Architecture
 
