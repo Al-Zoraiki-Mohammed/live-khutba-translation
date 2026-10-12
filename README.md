@@ -52,7 +52,7 @@ Live-khutba-translator/
 
 ## 🚀 Running the Project
 ### Option A: Fully Automated Single-Click (Recommended for Mosque Staff)
-We have provided single-click scripts that automatically spin up the uv environment, start the backend WebSocket server on port 8765, launch your default browser into full-screen kiosk mode pointing to index_2.html, and can auto-shutdown after a designated duration (e.g., 45 minutes of Khutba time).
+We have provided single-click scripts that automatically spin up the uv environment, start the backend WebSocket server on port 8765, launch your default browser into full-screen kiosk mode pointing to index.html, and can auto-shutdown after a designated duration (e.g., 45 minutes of Khutba time).
 ### 🪟 For Windows (run_khutba.bat)
 Simply double-click run_khutba.bat from your project folder.
 
@@ -72,9 +72,10 @@ Simply double-click run_khutba.bat from your project folder.
 ### Option B: Manual Execution (For Development & Testing)
 If you prefer running components manually in separate terminal windows:
 1. Sync dependencies and start the backend server:
+
  ```bash
-  uv run python backend/app_2.py
+  uv run python backend/app.py
   ```
  (This boots up the WebSocket server on ws://localhost:8765 and initializes the PyAudio stream).
  2.Open the frontend display:
-- Double-click frontend/index_2.html to open it directly in any modern browser or map it to your secondary display screen next to your prayer timetable display.
+- Double-click frontend/index.html to open it directly in any modern browser or map it to your secondary display screen next to your prayer timetable display.
