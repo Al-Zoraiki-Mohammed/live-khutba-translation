@@ -79,4 +79,5 @@ If you prefer running components manually in separate terminal windows:
  This boots up the WebSocket server on ws://localhost:8765 and initializes the PyAudio stream.
  
 2. Open the frontend display:
-- Double-click frontend/index.html to open it directly in any modern browser or map it to your secondary display screen next to your prayer timetable display.
+    
+    - Double-click frontend/index.html to open it directly in any modern browser or map it to your secondary display screen next to your prayer timetable display.
