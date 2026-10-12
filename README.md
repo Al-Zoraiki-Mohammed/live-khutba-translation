@@ -57,7 +57,7 @@ Live-khutba-translator/
 2. Inside your project root, create a `.env` file inside the `backend/` folder (or root depending on your loader):
 
    ```text
-   OPENAI_API_KEY=your_actual_openai_api_key_here
+   OPENAI_API_KEY="your_actual_openai_api_key_here"
    ```
 
 ## 🚀 Running the Project
