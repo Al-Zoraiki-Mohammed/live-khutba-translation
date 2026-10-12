@@ -4,20 +4,20 @@ echo ========================================
 echo Starting Khutba Translation App via uv...
 echo ========================================
 
-:: uv run automatically provisions/uses the environment and runs the backend
+:: 1. Launch the Python backend in the background via uv
 start /b uv run python backend/app.py
 
-:: Wait 3 seconds for the server to spin up
+:: 2. Wait 3 seconds for the WebSocket server to boot
 timeout /t 3 >nul
 
-:: Open Chrome in kiosk mode.
-start chrome --kiosk http://localhost:8765
+:: 3. Open index.html in whatever DEFAULT browser Windows is set to use
+start "" "%~dp0frontend\index.html"
 
-:: Set timer for 45 minutes (45 min * 60 sec = 2700 seconds)
+:: 4. Keep running for 45 minutes (2700 seconds)
 echo Khutba app is running. It will auto-close in 45 minutes...
 timeout /t 2700
 
-:: Terminate processes when time is up
+:: 5. Safely stop the backend process when time is up
 taskkill /f /im python.exe
-taskkill /f /im chrome.exe
+echo Khutba session completed. Exiting...
 exit
