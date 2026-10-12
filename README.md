@@ -11,8 +11,14 @@ A real-time, AI-powered transcription and translation system designed for Friday
   * When mosques hire human translators or ask the Imam to translate sentence-by-sentence during the Khutba, it significantly delays the speech and makes the overall Khutba time much longer, disrupting tight Friday schedules.
 * **The Solution:** 
   * This application hooks directly into the mosque's audio feed and streams real-time AI translations instantly without forcing the Imam to pause.
-  * Congregants follow along live on display screens (such as next to Mawaqit prayer timetables) with zero human
+  * Congregants follow along live on display screens (such as next to Mawaqit prayer timetables) with zero human intervention required by mosque volunteers.
 ---
+
+## 💰 Operational Cost Efficiency
+* To make this system sustainable for mosques of any size, the pipeline uses lightweight, high-efficiency models (whisper-1 and gpt-4o-mini) to keep operational costs as low as possible:
+  * Audio Transcription (whisper-1): $0.006 per minute. A full 45-minute Khutba costs ~$0.27.
+  * Translation (gpt-4o-mini): $0.15 / 1M input tokens & $0.60 / 1M output tokens. A typical 45-minute Khutba uses only a few thousand tokens, costing ~$0.01 to $0.03.
+  * 💡 Total Cost: By using these specific models, the total cost stays under ~$0.30 USD per 45-minute Khutba, making it an extremely budget-friendly solution for long-term mosque deployment.
 
 
 ## 📂 Project Architecture
