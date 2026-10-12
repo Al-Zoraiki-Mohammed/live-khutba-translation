@@ -16,9 +16,9 @@ A real-time, AI-powered transcription and translation system designed for Friday
 ```text
 Live-khutba-translator/
 ├── backend/
-│   └── app_2.py          # Main backend (PyAudio, Silero VAD, OpenAI API, WebSockets)
+│   └── app.py          # Main backend (PyAudio, Silero VAD, OpenAI API, WebSockets)
 ├── frontend/
-│   └── index_2.html      # Real-time WebSocket display interface (Kiosk optimized)
+│   └── index.html      # Real-time WebSocket display interface (Kiosk optimized)
 ├── pyproject.toml        # Project dependencies managed via uv
 ├── run_khutba.bat        # Single-click automation script for Windows
 └── run_khutba.sh         # Single-click automation script for Linux / macOS
@@ -28,7 +28,8 @@ Live-khutba-translator/
 1. Python 3.10 or higher installed on the host machine.
 2. uv package manager installed (Astral uv docs):
     - Windows (PowerShell):
-        - ```text powershell -ExecutionPolicy ByPass -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
+        - ```text 
+        powershell -ExecutionPolicy ByPass -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
         ```
     - Linux / macOS:
         - ```text curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
