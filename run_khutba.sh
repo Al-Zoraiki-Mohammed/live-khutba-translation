@@ -14,16 +14,19 @@ BACKEND_PID=$!
 # Wait 3 seconds for the server to boot
 sleep 3
 
-# Open browser automatically (macOS 'open' or Linux 'xdg-open')
+# Open frontend file using the system default browser
+FRONTEND_PATH="$(pwd)/frontend/index.html"
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    open -a "Google Chrome" http://localhost:8765
+    # macOS: Opens file in the default browser
+    open "$FRONTEND_PATH"
 else
-    xdg-open http://localhost:8765
+    # Linux: Opens file in the default desktop browser
+    xdg-open "$FRONTEND_PATH"
 fi
 
 # Sleep for 45 minutes (45 * 60 = 2700 seconds)
 sleep 2700
 
-# Kill the backend process and close Chrome
+# Kill only the backend process safely (leaves user's browser tabs alone)
 kill $BACKEND_PID
-pkill -f "Google Chrome"
